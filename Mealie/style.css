@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.meals .card {
+    margin-bottom: 30px;
+}
+
+.meals .card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e3e3e3;
+}
