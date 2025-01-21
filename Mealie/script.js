@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Add boiled eggs on top.",
                 "Season with salt and pepper.",
             ],
-            nutrition: "Calories: 300, Protein: 20g, Carbs: 30g, Fat: 15g",
+            nutrition: "Calories: 350, Protein: 20g, Carbs: 30g, Fat: 15g",
         },
         {
             id: 2,
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displayRecipes(filteredRecipes);
     }
 
-    // Display recipes as cards
+    
     function displayRecipes(recipesToDisplay) {
         mealCards.innerHTML = "";
 
