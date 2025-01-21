@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const recipes = [
         {
             id: 1,
-            title: "Healthy Breakfast",
+            title: "Avacado Toast",
             description: "Start your day with a healthy breakfast rich in nutrients.",
             image: "https://images.unsplash.com/photo-1465014925804-7b9ede58d0d7",
             diet: "none",
@@ -46,6 +46,444 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             nutrition: "Calories: 150, Protein: 2g, Carbs: 10g, Fat: 12g",
         },
+        {
+            id: 3,
+            title: "Vegetable Stir-Fry with Tofu",
+            description: "A  healthy vegetable stir-fry with tofu.",
+            image: "https://images.unsplash.com/photo-1603395264647-cf7d42f4995b", 
+            diet: "vegetarian",
+            meal: "lunch",
+            difficulty: "easy",
+            ingredients: [
+                "1 block firm tofu, cubed",
+                "1 cup broccoli florets",
+                "1 bell pepper, sliced",
+                "1/2 onion, sliced",
+                "2 tbsp soy sauce",
+                "1 tbsp sesame oil",
+                "1 tbsp garlic, minced",
+                "1 tbsp ginger, minced",
+                "1 tbsp sesame seeds (optional)"
+            ],
+            instructions: [
+                "Press tofu to remove excess water, then cut into cubes.",
+                "Heat sesame oil in a pan over medium heat.",
+                "Add garlic and ginger, sauté until fragrant.",
+                "Add tofu cubes and cook until golden brown on all sides.",
+                "Add broccoli, bell pepper, and onion. Stir-fry for 5-7 minutes.",
+                "Pour in soy sauce and toss to coat the vegetables and tofu.",
+                "Sprinkle with sesame seeds (optional) and serve hot."
+            ],
+            nutrition: "Calories: 350, Protein: 20g, Carbs: 25g, Fat: 22g"
+        },
+        {
+            id: 4,
+            title: "Quinoa Salad with Avocado",
+            description: "A light, refreshing quinoa salad with avocado and a zesty lemon dressing.",
+            image: "https://images.unsplash.com/photo-1596678597801-b9602ec174e6", 
+            meal: "lunch",
+            difficulty: "easy",
+            ingredients: [
+                "1 cup cooked quinoa",
+                "1 avocado, diced",
+                "1 cup cherry tomatoes, halved",
+                "1/2 cucumber, diced",
+                "1/4 cup red onion, thinly sliced",
+                "2 tbsp olive oil",
+                "1 tbsp lemon juice",
+                "1 tbsp fresh parsley, chopped",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Cook quinoa according to package instructions and let it cool.",
+                "In a large bowl, combine quinoa, avocado, cherry tomatoes, cucumber, and red onion.",
+                "In a small bowl, whisk together olive oil, lemon juice, and parsley.",
+                "Pour the dressing over the salad and toss gently.",
+                "Season with salt and pepper to taste and serve chilled."
+            ],
+            nutrition: "Calories: 350, Protein: 8g, Carbs: 45g, Fat: 18g"
+        },
+        {
+            id: 5,
+            title: "Sweet Potato & Black Bean Tacos",
+            description: "A flavorful taco filled with roasted sweet potatoes and black beans, topped with fresh avocado.",
+            image: "https://images.unsplash.com/photo-1600921328311-78845a6b4b82", 
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "2 medium sweet potatoes, peeled and cubed",
+                "1 can black beans, drained and rinsed",
+                "1 tsp cumin",
+                "1 tsp paprika",
+                "1 tbsp olive oil",
+                "8 small corn tortillas",
+                "1 avocado, sliced",
+                "Fresh cilantro, for garnish",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 400°F (200°C).",
+                "Toss sweet potato cubes with olive oil, cumin, paprika, salt, and pepper.",
+                "Roast sweet potatoes for 25-30 minutes, or until tender and slightly browned.",
+                "Warm the tortillas and fill them with roasted sweet potatoes, black beans, and avocado slices.",
+                "Top with fresh cilantro and serve."
+            ],
+            nutrition: "Calories: 350, Protein: 8g, Carbs: 50g, Fat: 15g"
+        },
+        {
+            id: 6,
+            title: "Chickpea & Spinach Curry",
+            description: "A warm, hearty curry with chickpeas and spinach, served with brown rice.",
+            image: "https://images.unsplash.com/photo-1592284007223-404d3f502f23", 
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 can chickpeas, drained and rinsed",
+                "2 cups fresh spinach",
+                "1 onion, chopped",
+                "2 cloves garlic, minced",
+                "1 can coconut milk",
+                "1 tbsp curry powder",
+                "1 tbsp olive oil",
+                "1 cup brown rice",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Cook the brown rice according to package instructions.",
+                "In a large pan, heat olive oil over medium heat. Add onion and garlic, and sauté until soft.",
+                "Add curry powder, chickpeas, coconut milk, and spinach. Stir to combine.",
+                "Simmer for 10-15 minutes until the curry thickens and the spinach wilts.",
+                "Serve the curry over brown rice."
+            ],
+            nutrition: "Calories: 400, Protein: 12g, Carbs: 55g, Fat: 18g"
+        },
+        {
+            id: 7,
+            title: "Avocado Toast with Cherry Tomatoes",
+            description: "Simple and nutritious avocado toast topped with juicy cherry tomatoes and a sprinkle of chili flakes.",
+            image: "https://images.unsplash.com/photo-1502760859703-f167a2740e6d", 
+            diet: "vegetarian",
+            meal: "breakfast",
+            difficulty: "easy",
+            ingredients: [
+                "2 slices whole grain bread, toasted",
+                "1 avocado, mashed",
+                "1/2 cup cherry tomatoes, halved",
+                "1 tbsp olive oil",
+                "Chili flakes, to taste",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Toast the slices of bread until golden and crisp.",
+                "Mash the avocado and spread it evenly over the toast.",
+                "Top with cherry tomatoes, olive oil, and a sprinkle of chili flakes.",
+                "Season with salt and pepper to taste, and serve."
+            ],
+            nutrition: "Calories: 250, Protein: 6g, Carbs: 30g, Fat: 14g"
+        },
+        {
+            id: 8,
+            title: "Zucchini Noodles with Pesto",
+            description: "Light and fresh zucchini noodles served with homemade basil pesto.",
+            image: "https://images.unsplash.com/photo-1587365005673-22fa8de39ecb", 
+            difficulty: "medium",
+            ingredients: [
+                "2 medium zucchinis, spiralized",
+                "1/4 cup homemade basil pesto (or store-bought)",
+                "1 tbsp olive oil",
+                "1 tbsp pine nuts, toasted",
+                "Vegan parmesan, for garnish"
+            ],
+            instructions: [
+                "Heat olive oil in a pan over medium heat. Add zucchini noodles and sauté for 2-3 minutes.",
+                "Toss the noodles with basil pesto until evenly coated.",
+                "Top with toasted pine nuts and a sprinkle of vegan parmesan."
+            ],
+            nutrition: "Calories: 200, Protein: 4g, Carbs: 20g, Fat: 14g"
+        },
+        {
+            id: 9,
+            title: "Mango Chia Pudding",
+            description: "A sweet and nutritious chia pudding topped with fresh mango.",
+            image: "https://images.unsplash.com/photo-1596674470048-6d38963d3988", 
+            diet: "vegan",
+            meal: "dessert",
+            difficulty: "easy",
+            ingredients: [
+                "1/2 cup chia seeds",
+                "1 cup almond milk",
+                "1 tbsp maple syrup",
+                "1/2 mango, diced",
+                "1/4 tsp vanilla extract"
+            ],
+            instructions: [
+                "In a bowl, combine chia seeds, almond milk, maple syrup, and vanilla extract.",
+                "Mix well and refrigerate for at least 4 hours or overnight to set.",
+                "Top with diced mango before serving."
+            ],
+            nutrition: "Calories: 150, Protein: 4g, Carbs: 25g, Fat: 8g"
+        },
+        {
+            id: 10,
+            title: "Grilled Vegetable Skewers",
+            description: "Colorful grilled vegetables on skewers, served with a tangy dipping sauce.",
+            image: "https://images.unsplash.com/photo-1612468720810-0e09b98bb528", 
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 red bell pepper, cut into chunks",
+                "1 zucchini, sliced",
+                "1 red onion, cut into chunks",
+                "8 cherry tomatoes",
+                "1 tbsp olive oil",
+                "1 tbsp balsamic vinegar",
+                "Salt and pepper, to taste",
+                "For dipping sauce: 1/4 cup tahini, 1 tbsp lemon juice, 1 tsp garlic powder"
+            ],
+            instructions: [
+                "Preheat the grill to medium-high heat.",
+                "Thread the vegetables onto skewers and brush with olive oil, balsamic vinegar, salt, and pepper.",
+                "Grill the skewers for 8-10 minutes, turning occasionally, until the vegetables are tender and slightly charred.",
+                "Mix tahini, lemon juice, and garlic powder to make the dipping sauce.",
+                "Serve the grilled vegetable skewers with the tahini dipping sauce."
+            ],
+            nutrition: "Calories: 200, Protein: 6g, Carbs: 35g, Fat: 10g"
+        },
+        {
+            id: 11,
+            title: "Quinoa Salad with Roasted Vegetables",
+            description: "A nutritious quinoa salad with roasted vegetables, perfect for lunch or dinner.",
+            image: "https://images.unsplash.com/photo-1587614203654-9418c4db5be0", 
+            meal: "lunch",
+            difficulty: "medium",
+            ingredients: [
+                "1 cup quinoa, cooked",
+                "1 cup roasted sweet potatoes",
+                "1 cup roasted bell peppers",
+                "1/2 cup cherry tomatoes",
+                "2 tbsp olive oil",
+                "1 tbsp lemon juice",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 400°F (200°C) and roast the sweet potatoes and bell peppers for 20 minutes.",
+                "Combine cooked quinoa, roasted vegetables, and cherry tomatoes in a bowl.",
+                "Drizzle with olive oil, lemon juice, and season with salt and pepper."
+            ],
+            nutrition: "Calories: 350, Protein: 8g, Carbs: 55g, Fat: 10g"
+        },
+        {
+            id: 12,
+            title: "Stuffed Bell Peppers with Lentils",
+            description: "Delicious bell peppers stuffed with lentils, vegetables, and spices, baked to perfection.",
+            image: "https://images.unsplash.com/photo-1596742801477-99c1605e4c5b", 
+            difficulty: "medium",
+            ingredients: [
+                "4 bell peppers, tops cut off and seeds removed",
+                "1 cup cooked lentils",
+                "1/2 cup diced tomatoes",
+                "1/4 cup onions, diced",
+                "1 tsp cumin",
+                "1 tsp paprika",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 375°F (190°C).",
+                "Mix the lentils, tomatoes, onions, cumin, paprika, salt, and pepper.",
+                "Stuff the bell peppers with the lentil mixture and place them in a baking dish.",
+                "Cover with foil and bake for 30 minutes."
+            ],
+            nutrition: "Calories: 220, Protein: 10g, Carbs: 45g, Fat: 3g"
+        },
+        {
+            id: 13,
+            title: "Gluten-Free Cauliflower Pizza Crust",
+            description: "A gluten-free pizza crust made from cauliflower, perfect for a healthy pizza night.",
+            image: "https://images.unsplash.com/photo-1568391067-8a1e6b96c8f1", 
+            diet: "gluten-free",
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 medium cauliflower, grated",
+                "1/2 cup almond flour",
+                "1 egg",
+                "1/4 cup nutritional yeast",
+                "1 tsp garlic powder",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 400°F (200°C).",
+                "Grate the cauliflower and microwave it for 4-5 minutes, then squeeze out excess water.",
+                "Mix the cauliflower with almond flour, egg, nutritional yeast, garlic powder, salt, and pepper.",
+                "Form the dough into a pizza crust and bake for 15-20 minutes.",
+                "Top with your favorite ingredients and bake for another 5-10 minutes."
+            ],
+            nutrition: "Calories: 180, Protein: 8g, Carbs: 12g, Fat: 12g"
+        },
+        {
+            id: 14,
+            title: "Vegetable Stir-Fry with Tofu",
+            description: "A colorful vegetable stir-fry with tofu, served over brown rice for a balanced meal.",
+            image: "https://images.unsplash.com/photo-1593596153249-312f9ed2da3c", 
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 block firm tofu, pressed and cubed",
+                "1 cup broccoli florets",
+                "1 bell pepper, sliced",
+                "1 carrot, sliced",
+                "1 tbsp soy sauce",
+                "1 tbsp sesame oil",
+                "1 tbsp ginger, minced",
+                "2 cups cooked brown rice"
+            ],
+            instructions: [
+                "Sauté tofu in sesame oil until golden brown.",
+                "Add vegetables and ginger, and stir-fry for 5-7 minutes.",
+                "Drizzle with soy sauce and serve over cooked brown rice."
+            ],
+            nutrition: "Calories: 350, Protein: 20g, Carbs: 45g, Fat: 14g"
+        },
+        {
+            id: 15,
+            title: "Chia Seed Pudding with Berries",
+            description: "A healthy chia seed pudding topped with fresh berries, perfect for breakfast or a snack.",
+            image: "https://images.unsplash.com/photo-1618482104511-2270fd0e65a1", 
+            meal: "breakfast",
+            difficulty: "easy",
+            ingredients: [
+                "1/4 cup chia seeds",
+                "1 cup coconut milk",
+                "1 tbsp maple syrup",
+                "1/2 cup mixed berries"
+            ],
+            instructions: [
+                "Combine chia seeds, coconut milk, and maple syrup in a bowl.",
+                "Stir well and refrigerate overnight to set.",
+                "Top with fresh berries before serving."
+            ],
+            nutrition: "Calories: 200, Protein: 4g, Carbs: 25g, Fat: 12g"
+        },
+        {
+            id: 16,
+            title: "Spaghetti Squash with Marinara Sauce",
+            description: "A gluten-free alternative to pasta made with spaghetti squash, topped with marinara sauce.",
+            image: "https://images.unsplash.com/photo-1603466623984-098d95b61f72", 
+            diet: "gluten-free",
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 medium spaghetti squash",
+                "1 cup marinara sauce",
+                "1 tbsp olive oil",
+                "1/4 cup fresh basil, chopped",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 400°F (200°C).",
+                "Cut the spaghetti squash in half, remove seeds, and bake for 30-40 minutes.",
+                "Scrape the flesh into spaghetti-like strands.",
+                "Top with marinara sauce, olive oil, fresh basil, salt, and pepper."
+            ],
+            nutrition: "Calories: 180, Protein: 5g, Carbs: 30g, Fat: 7g"
+        },
+        {
+            id: 17,
+            title: "Vegetarian Burrito Bowl",
+            description: "A colorful burrito bowl with rice, beans, veggies, and avocado, served with a tangy lime dressing.",
+            image: "https://images.unsplash.com/photo-1596816761218-dc7d1662211e", 
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 cup cooked brown rice",
+                "1 can black beans, drained and rinsed",
+                "1/2 cup corn kernels",
+                "1/2 avocado, sliced",
+                "1/4 cup red onion, diced",
+                "1 tbsp lime juice",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Assemble the bowl with rice, black beans, corn, avocado, and red onion.",
+                "Drizzle with lime juice, season with salt and pepper, and serve."
+            ],
+            nutrition: "Calories: 350, Protein: 12g, Carbs: 50g, Fat: 14g"
+        },
+        {
+            id: 18,
+            title: "Vegan Mushroom Risotto",
+            description: "A creamy and rich mushroom risotto made with vegetable broth and coconut milk.",
+            image: "https://images.unsplash.com/photo-1600850370395-0f575c2e1f3b", 
+            diet: "vegan",
+            meal: "dinner",
+            difficulty: "medium",
+            ingredients: [
+                "1 cup Arborio rice",
+                "2 cups vegetable broth",
+                "1 cup coconut milk",
+                "1/2 cup mushrooms, sliced",
+                "1/4 cup onions, chopped",
+                "1 tbsp olive oil",
+                "1 tsp garlic, minced",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "In a pan, sauté onions and garlic in olive oil until softened.",
+                "Add Arborio rice and cook for 2 minutes.",
+                "Gradually add broth, stirring constantly until absorbed.",
+                "Stir in mushrooms, coconut milk, salt, and pepper, and cook until creamy."
+            ],
+            nutrition: "Calories: 350, Protein: 6g, Carbs: 50g, Fat: 14g"
+        },
+        {
+            id: 19,
+            title: "Gluten-Free Banana Pancakes",
+            description: "Fluffy gluten-free pancakes made with mashed bananas and almond flour, topped with maple syrup.",
+            image: "https://images.unsplash.com/photo-1566901131-3f7b2f4d5d5f", 
+            diet: "gluten-free",
+            meal: "breakfast",
+            difficulty: "easy",
+            ingredients: [
+                "1 ripe banana, mashed",
+                "1/2 cup almond flour",
+                "2 eggs",
+                "1 tsp baking powder (gluten-free)",
+                "1/4 tsp cinnamon",
+                "Maple syrup, for topping"
+            ],
+            instructions: [
+                "Mix mashed banana, almond flour, eggs, baking powder, and cinnamon to make batter.",
+                "Heat a pan over medium heat and cook pancakes for 2-3 minutes per side.",
+                "Serve with maple syrup."
+            ],
+            nutrition: "Calories: 220, Protein: 10g, Carbs: 25g, Fat: 12g"
+        },
+        {
+            id: 20,
+            title: "Gluten-Free Sweet Potato Fries",
+            description: "Crispy and healthy sweet potato fries baked to perfection, perfect as a snack or side dish.",
+            image: "https://images.unsplash.com/photo-1591298961579-1d5174300dbf", 
+            diet: "gluten-free",
+            meal: "side",
+            difficulty: "easy",
+            ingredients: [
+                "2 medium sweet potatoes, peeled and cut into fries",
+                "1 tbsp olive oil",
+                "1 tsp paprika",
+                "1 tsp garlic powder",
+                "Salt and pepper, to taste"
+            ],
+            instructions: [
+                "Preheat the oven to 425°F (220°C).",
+                "Toss sweet potato fries in olive oil, paprika, garlic powder, salt, and pepper.",
+                "Spread on a baking sheet and bake for 25-30 minutes, flipping halfway through."
+            ],
+            nutrition: "Calories: 180, Protein: 3g, Carbs: 35g, Fat: 7g"
+        }
+        
+        
+        
+
     ];
 
     const mealCards = document.getElementById("mealCards");
