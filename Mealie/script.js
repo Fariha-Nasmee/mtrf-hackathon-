@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Season with salt and pepper.",
             ],
             nutrition: "Calories: 350, Protein: 20g, Carbs: 30g, Fat: 15g",
+            budget:150
         },
         {
             id: 2,
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Toss well and serve.",
             ],
             nutrition: "Calories: 150, Protein: 2g, Carbs: 10g, Fat: 12g",
+            budget:350
         },
         {
             id: 3,
@@ -74,7 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Pour in soy sauce and toss to coat the vegetables and tofu.",
                 "Sprinkle with sesame seeds (optional) and serve hot."
             ],
-            nutrition: "Calories: 350, Protein: 20g, Carbs: 25g, Fat: 22g"
+            nutrition: "Calories: 350, Protein: 20g, Carbs: 25g, Fat: 22g",
+            budget: 385
+            
         },
         {
             id: 4,
@@ -101,7 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Pour the dressing over the salad and toss gently.",
                 "Season with salt and pepper to taste and serve chilled."
             ],
-            nutrition: "Calories: 350, Protein: 8g, Carbs: 45g, Fat: 18g"
+            nutrition: "Calories: 350, Protein: 8g, Carbs: 45g, Fat: 18g",
+            budget:400
         },
         {
             id: 5,
@@ -128,7 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Warm the tortillas and fill them with roasted sweet potatoes, black beans, and avocado slices.",
                 "Top with fresh cilantro and serve."
             ],
-            nutrition: "Calories: 350, Protein: 8g, Carbs: 50g, Fat: 15g"
+            nutrition: "Calories: 350, Protein: 8g, Carbs: 50g, Fat: 15g",
+            budget: 390
         },
         {
             id: 6,
@@ -155,7 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Simmer for 10-15 minutes until the curry thickens and the spinach wilts.",
                 "Serve the curry over brown rice."
             ],
-            nutrition: "Calories: 400, Protein: 12g, Carbs: 55g, Fat: 18g"
+            nutrition: "Calories: 400, Protein: 12g, Carbs: 55g, Fat: 18g",
+            budget: 280
         },
         {
             id: 7,
@@ -179,7 +186,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Top with cherry tomatoes, olive oil, and a sprinkle of chili flakes.",
                 "Season with salt and pepper to taste, and serve."
             ],
-            nutrition: "Calories: 250, Protein: 6g, Carbs: 30g, Fat: 14g"
+            nutrition: "Calories: 250, Protein: 6g, Carbs: 30g, Fat: 14g",
+            budget: 330
         },
         {
             id: 8,
@@ -199,7 +207,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Toss the noodles with basil pesto until evenly coated.",
                 "Top with toasted pine nuts and a sprinkle of vegan parmesan."
             ],
-            nutrition: "Calories: 200, Protein: 4g, Carbs: 20g, Fat: 14g"
+            nutrition: "Calories: 200, Protein: 4g, Carbs: 20g, Fat: 14g",
+            budget:300
         },
         {
             id: 9,
@@ -221,7 +230,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Mix well and refrigerate for at least 4 hours or overnight to set.",
                 "Top with diced mango before serving."
             ],
-            nutrition: "Calories: 150, Protein: 4g, Carbs: 25g, Fat: 8g"
+            nutrition: "Calories: 150, Protein: 4g, Carbs: 25g, Fat: 8g",
+            budget: 385
         },
         
         {
@@ -248,7 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Mix tahini, lemon juice, and garlic powder to make the dipping sauce.",
                 "Serve the grilled vegetable skewers with the tahini dipping sauce."
             ],
-            "nutrition": "Calories: 200, Protein: 6g, Carbs: 35g, Fat: 10g"
+            "nutrition": "Calories: 200, Protein: 6g, Carbs: 35g, Fat: 10g",
+            budget: 170
         },
         {
             "id": 11,
@@ -271,7 +282,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Combine cooked quinoa, roasted vegetables, and cherry tomatoes in a bowl.",
                 "Drizzle with olive oil, lemon juice, and season with salt and pepper."
             ],
-            "nutrition": "Calories: 350, Protein: 8g, Carbs: 55g, Fat: 10g"
+            "nutrition": "Calories: 350, Protein: 8g, Carbs: 55g, Fat: 10g",
+            budget:220
         },
         {
             "id": 12,
@@ -294,7 +306,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Stuff the bell peppers with the lentil mixture and place them in a baking dish.",
                 "Cover with foil and bake for 30 minutes."
             ],
-            "nutrition": "Calories: 220, Protein: 10g, Carbs: 45g, Fat: 3g"
+            "nutrition": "Calories: 220, Protein: 10g, Carbs: 45g, Fat: 3g",
+            budget:150
         },
         {
             "id": 13,
@@ -319,7 +332,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Form the dough into a pizza crust and bake for 15-20 minutes.",
                 "Top with your favorite ingredients and bake for another 5-10 minutes."
             ],
-            "nutrition": "Calories: 180, Protein: 8g, Carbs: 12g, Fat: 12g"
+            "nutrition": "Calories: 180, Protein: 8g, Carbs: 12g, Fat: 12g",
+            budget:300
         },
         
         {
@@ -340,7 +354,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Stir well and refrigerate overnight to set.",
                 "Top with fresh berries before serving."
             ],
-            "nutrition": "Calories: 200, Protein: 4g, Carbs: 25g, Fat: 12g"
+            "nutrition": "Calories: 200, Protein: 4g, Carbs: 25g, Fat: 12g",
+            budget:230
         },
         {
             "id": 16,
@@ -363,7 +378,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Scrape the flesh into spaghetti-like strands.",
                 "Top with marinara sauce, olive oil, fresh basil, salt, and pepper."
             ],
-            "nutrition": "Calories: 180, Protein: 5g, Carbs: 30g, Fat: 7g"
+            "nutrition": "Calories: 180, Protein: 5g, Carbs: 30g, Fat: 7g",
+            budget: 180
         },
         {
             "id": 17,
@@ -385,7 +401,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Assemble the bowl with rice, black beans, corn, avocado, and red onion.",
                 "Drizzle with lime juice, season with salt and pepper, and serve."
             ],
-            "nutrition": "Calories: 350, Protein: 12g, Carbs: 50g, Fat: 14g"
+            "nutrition": "Calories: 350, Protein: 12g, Carbs: 50g, Fat: 14g",
+            budget:95
         },
         {
             "id": 18,
@@ -411,7 +428,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Gradually add broth, stirring constantly until absorbed.",
                 "Stir in mushrooms, coconut milk, salt, and pepper, and cook until creamy."
             ],
-            "nutrition": "Calories: 350, Protein: 6g, Carbs: 50g, Fat: 14g"
+            "nutrition": "Calories: 350, Protein: 6g, Carbs: 50g, Fat: 14g",
+            budget: 95
         },
         {
             "id": 19,
@@ -434,7 +452,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Heat a pan over medium heat and cook pancakes for 2-3 minutes per side.",
                 "Serve with maple syrup."
             ],
-            "nutrition": "Calories: 220, Protein: 10g, Carbs: 22g, Fat: 12g"
+            "nutrition": "Calories: 220, Protein: 10g, Carbs: 22g, Fat: 12g",
+            budget:90
         }
         
         
@@ -445,6 +464,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const mealCards = document.getElementById("mealCards");
+    let selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
 
     // Toggle password visibility
     function togglePassword(fieldId) {
@@ -462,19 +482,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const diet = document.getElementById("dietFilter").value;
         const meal = document.getElementById("mealFilter").value;
         const difficulty = document.getElementById("difficultyFilter").value;
+        const budget = parseInt(document.getElementById("budgetFilter").value, 10);
 
         const filteredRecipes = recipes.filter((recipe) => {
             return (
                 (diet === "" || recipe.diet === diet) &&
                 (meal === "" || recipe.meal === meal) &&
-                (difficulty === "" || recipe.difficulty === difficulty)
+                (difficulty === "" || recipe.difficulty === difficulty) &&
+                (isNaN(budget) || recipe.budget <= budget)
             );
         });
 
         displayRecipes(filteredRecipes);
     }
 
-    
     function displayRecipes(recipesToDisplay) {
         mealCards.innerHTML = "";
 
@@ -492,7 +513,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-body">
                         <h5 class="card-title">${recipe.title}</h5>
                         <p class="card-text">${recipe.description}</p>
-                        <button class="btn btn-primary" onclick="showRecipeDetails(${recipe.id})">View Details</button>
+                        <button class="btn btn-custom-primary" onclick="showRecipeDetails(${recipe.id})">View Details</button>
+                        <button class="btn btn-custom-success mt-2" onclick="addToSelectedRecipes(${recipe.id})">Add to Selected</button>
                     </div>
                 </div>
             `;
@@ -502,25 +524,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show detailed recipe modal
     window.showRecipeDetails = function (recipeId) {
+        // Find the recipe object by its ID
         const recipe = recipes.find((r) => r.id === recipeId);
+
+        // Check if the recipe exists before trying to display it
+        if (!recipe) {
+            console.error(`Recipe with ID ${recipeId} not found.`);
+            return;
+        }
+
+        // Set the recipe title
         document.getElementById("recipeTitle").textContent = recipe.title;
+
+        // Set the recipe description
         document.getElementById("recipeDescription").textContent = recipe.description;
+
+        // Set the recipe ingredients
         document.getElementById("recipeIngredients").innerHTML = recipe.ingredients
             .map((ingredient) => `<li>${ingredient}</li>`)
             .join("");
+
+        // Set the recipe instructions
         document.getElementById("recipeInstructions").innerHTML = recipe.instructions
             .map((instruction) => `<li>${instruction}</li>`)
             .join("");
+
+        // Set the recipe nutritional information
         document.getElementById("recipeNutrition").textContent = recipe.nutrition;
+
+        // Set the recipe budget
+        document.getElementById("recipeBudget").textContent = `Budget: ${recipe.budget} TK`;
+
+        // Show the modal with the recipe details
         $("#recipeModal").modal("show");
+    };
+
+    // Add recipe to selected recipes
+    window.addToSelectedRecipes = function (recipeId) {
+        const recipe = recipes.find((r) => r.id === recipeId);
+        if (!recipe) return;
+
+        selectedRecipes.push(recipe);
+        localStorage.setItem("selectedRecipes", JSON.stringify(selectedRecipes));
+        alert(`${recipe.title} added to selected recipes.`);
     };
 
     // Add event listeners
     document.getElementById("dietFilter").addEventListener("change", filterRecipes);
     document.getElementById("mealFilter").addEventListener("change", filterRecipes);
     document.getElementById("difficultyFilter").addEventListener("change", filterRecipes);
+    document.getElementById("budgetFilter").addEventListener("change", filterRecipes);
 
     // Initial display of recipes
     displayRecipes(recipes);
 });
-//Things left to add are a trackers and sliders, 

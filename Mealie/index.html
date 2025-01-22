@@ -58,6 +58,17 @@
         .modal-body .recipe-details {
             display: block;
         }
+        .btn-custom-primary {
+            background-color: #ffc3d6; 
+            color: white;
+            border: none;
+        }
+
+        .btn-custom-success {
+             background-color: #9ddb8f; 
+            color: white;
+            border: none;
+         }
     </style>
 </head>
 
@@ -72,6 +83,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="selected_recipes.html">My Selected Recipes</a>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
                 </li>
@@ -95,7 +110,9 @@
         <div class="container">
             <h1>Build a Healthy Meal Plan</h1>
             <p>Nutritious, Budget-Friendly Meals</p>
-            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+            <a href="#features" class="btn btn-primary btn-lg" style="background-color: #aedfb9; color: #000; border: 1px solid #abe0c1;">Learn More</a>
+            <a href="selected_recipes.html" class="btn btn-lg mt-3" style="background-color: #ffecec; color: #000; border: 1px solid #ffd1d6;">View Selected Recipes</a>
+
         </div>
     </div>
 
@@ -145,6 +162,16 @@
                     <option value="easy">Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="budgetFilter" class="form-control">
+                    <option value="">All Budgets</option>
+                    <option value="100">Up to 100 TK</option>
+                    <option value="200">Up to 200 TK</option>
+                    <option value="300">Up to 300 TK</option>
+                    <option value="400">Up to 400 TK</option>
+                    <option value="500">Up to 500 TK</option>
                 </select>
             </div>
         </div>
@@ -256,6 +283,8 @@
                         <ol id="recipeInstructions"></ol>
                         <h4>Nutritional Information:</h4>
                         <p id="recipeNutrition"></p>
+                                <h4>Budget:</h4>
+        <p id="recipeBudget"></p> 
                     </div>
                 </div>
             </div>
