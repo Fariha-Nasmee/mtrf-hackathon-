@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 7,
             title: "Avocado Toast with Cherry Tomatoes",
             description: "Simple and nutritious avocado toast topped with juicy cherry tomatoes and a sprinkle of chili flakes.",
-            image: "https://media.istockphoto.com/photos/open-sandwich-set-with-cream-cheese-prosciutto-salmon-avocado-and-fresh-greens-gm1650759102-534088474?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay&utm_term=tomato+avocado+toast",
+            image: "https://plus.unsplash.com/premium_photo-1663840225844-983abccc2e6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXZvY2FkbyUyMHRvYXN0JTIwd2l0aCUyMGNoZXJyeXxlbnwwfHwwfHx8MA%3D%3D",
             diet: "vegetarian",
             meal: "breakfast",
             difficulty: "easy",
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 9,
             title: "Mango Chia Pudding",
             description: "A sweet and nutritious chia pudding topped with fresh mango.",
-            image: "https://images.unsplash.com/photo-1596674470048-6d38963d3988",
+            image: "https://images.unsplash.com/photo-1629180050285-7c56c6671f19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuZ28lMjBjaGlhJTIwcHVkZGluZ3xlbnwwfHwwfHx8MA%3D%3D",
             diet: "vegan",
             meal: "dessert",
             difficulty: "easy",
@@ -466,7 +466,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mealCards = document.getElementById("mealCards");
     let selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
 
-    // Toggle password visibility
+    // password
     function togglePassword(fieldId) {
         const field = document.getElementById(fieldId);
         const fieldType = field.getAttribute("type") === "password" ? "text" : "password";
@@ -477,7 +477,7 @@ document.addEventListener("DOMContentLoaded", () => {
         icon.classList.toggle("fa-eye-slash");
     }
 
-    // Filter recipes based on user inputs
+    
     function filterRecipes() {
         const diet = document.getElementById("dietFilter").value;
         const meal = document.getElementById("mealFilter").value;
@@ -495,6 +495,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
         displayRecipes(filteredRecipes);
     }
+    // Function to display selected recipes
+function displaySelectedRecipes(recipes) {
+    const selectedRecipesContainer = document.getElementById("selectedRecipes");
+    selectedRecipesContainer.innerHTML = "";
+
+    if (recipes.length === 0) {
+        selectedRecipesContainer.innerHTML = `<div class="col-12"><p>No recipes selected.</p></div>`;
+        return;
+    }
+
+    // Display recipes by category
+    displayRecipesByCategory(recipes, 'Breakfast');
+    displayRecipesByCategory(recipes, 'Lunch');
+    displayRecipesByCategory(recipes, 'Dinner');
+
+    calculateTotals(recipes);
+}
+ 
 
     function displayRecipes(recipesToDisplay) {
         mealCards.innerHTML = "";
@@ -503,6 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mealCards.innerHTML = `<div class="col-12"><p>No recipes found. Try different filters!</p></div>`;
             return;
         }
+
 
         recipesToDisplay.forEach((recipe) => {
             const card = document.createElement("div");
@@ -522,44 +541,44 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Show detailed recipe modal
+    
     window.showRecipeDetails = function (recipeId) {
-        // Find the recipe object by its ID
+        
         const recipe = recipes.find((r) => r.id === recipeId);
 
-        // Check if the recipe exists before trying to display it
+        
         if (!recipe) {
             console.error(`Recipe with ID ${recipeId} not found.`);
             return;
         }
 
-        // Set the recipe title
+        
         document.getElementById("recipeTitle").textContent = recipe.title;
 
-        // Set the recipe description
+        
         document.getElementById("recipeDescription").textContent = recipe.description;
 
-        // Set the recipe ingredients
+        
         document.getElementById("recipeIngredients").innerHTML = recipe.ingredients
             .map((ingredient) => `<li>${ingredient}</li>`)
             .join("");
 
-        // Set the recipe instructions
+        
         document.getElementById("recipeInstructions").innerHTML = recipe.instructions
             .map((instruction) => `<li>${instruction}</li>`)
             .join("");
 
-        // Set the recipe nutritional information
+        
         document.getElementById("recipeNutrition").textContent = recipe.nutrition;
 
-        // Set the recipe budget
+        
         document.getElementById("recipeBudget").textContent = `Budget: ${recipe.budget} TK`;
 
-        // Show the modal with the recipe details
+        
         $("#recipeModal").modal("show");
     };
 
-    // Add recipe to selected recipes
+    
     window.addToSelectedRecipes = function (recipeId) {
         const recipe = recipes.find((r) => r.id === recipeId);
         if (!recipe) return;
