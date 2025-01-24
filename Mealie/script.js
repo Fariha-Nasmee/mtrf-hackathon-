@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "image": "https://images.pexels.com/photos/6546549/pexels-photo-6546549.jpeg",
             "diet": "vegan",
             "meal": "dinner",
-            "difficulty": "medium",
+            "difficulty": "easy",
             "ingredients": [
                 "1 cup Arborio rice",
                 "2 cups vegetable broth",
@@ -462,6 +462,12 @@ document.addEventListener("DOMContentLoaded", () => {
         
 
     ];
+    //need to ensure the budget does not exclude previous criteria
+    //possibly add more options to ensure all the filters work and add more varieties if possible within the deadline 
+    //include error check 
+
+    
+
 
     const mealCards = document.getElementById("mealCards");
     let selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
@@ -495,7 +501,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         displayRecipes(filteredRecipes);
     }
-    // Function to display selected recipes
+    //Display cards need changed fonts
+    
 function displaySelectedRecipes(recipes) {
     const selectedRecipesContainer = document.getElementById("selectedRecipes");
     selectedRecipesContainer.innerHTML = "";
@@ -505,7 +512,7 @@ function displaySelectedRecipes(recipes) {
         return;
     }
 
-    // Display recipes by category
+    
     displayRecipesByCategory(recipes, 'Breakfast');
     displayRecipesByCategory(recipes, 'Lunch');
     displayRecipesByCategory(recipes, 'Dinner');
@@ -578,7 +585,6 @@ function displaySelectedRecipes(recipes) {
         $("#recipeModal").modal("show");
     };
 
-    
     window.addToSelectedRecipes = function (recipeId) {
         const recipe = recipes.find((r) => r.id === recipeId);
         if (!recipe) return;
@@ -587,13 +593,12 @@ function displaySelectedRecipes(recipes) {
         localStorage.setItem("selectedRecipes", JSON.stringify(selectedRecipes));
         alert(`${recipe.title} added to selected recipes.`);
     };
-
-    // Add event listeners
+    
     document.getElementById("dietFilter").addEventListener("change", filterRecipes);
     document.getElementById("mealFilter").addEventListener("change", filterRecipes);
     document.getElementById("difficultyFilter").addEventListener("change", filterRecipes);
     document.getElementById("budgetFilter").addEventListener("change", filterRecipes);
 
-    // Initial display of recipes
+    //Check all the filters for any errors
     displayRecipes(recipes);
 });

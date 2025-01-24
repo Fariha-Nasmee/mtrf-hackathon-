@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     let selectedRecipes = JSON.parse(localStorage.getItem("selectedRecipes")) || [];
     const selectedRecipesContainer = document.getElementById("selectedRecipes");
+   
+    //No idea how this works but since it does dont touch it
 
-    
     function removeFromSelectedRecipes(recipeId) {
         selectedRecipes = selectedRecipes.filter(recipe => recipe.id !== recipeId);
         localStorage.setItem("selectedRecipes", JSON.stringify(selectedRecipes));
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         $('#recipeModal').modal('show');
     }
 
-    // Function to calculate totals
+    
     function calculateTotals(recipes) {
         let totalCalories = 0;
         let totalProtein = 0;
